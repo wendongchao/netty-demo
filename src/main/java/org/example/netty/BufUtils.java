@@ -10,7 +10,7 @@ import io.netty.util.internal.StringUtil;
  **/
 public class BufUtils {
     // 打印ByteBuf中数据的方法
-    protected static void printBuffer(ByteBuf buffer) {
+    public static void printBuffer(ByteBuf buffer) {
         // 读取ByteBuffer已使用的字节数
         int byteSize = buffer.readableBytes();
         // 基于byteSize来计算显示的行数
